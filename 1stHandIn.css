@@ -1,0 +1,361 @@
+/*FIRST SECTION*/
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 5fr 1fr;
+}
+.header-picture {
+    background-image: url("jaguar-etype.jpg");
+    height: 29em;
+    background-size: cover;
+    background-position: center;
+}
+.header-headline {
+    display: flex;
+    align-items: flex-end;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    margin:0px;
+    padding: 0px;
+}
+.header-headline h1 {
+    color: #ffffff;
+    font-weight: 500;
+	font-size: 4.3em;
+    letter-spacing: 2px;
+    text-shadow: -2px -2px 15px black;
+    font-family: "Roboto Slab", serif;
+    align-items: flex-end;
+    margin-left: .4em;
+    margin-bottom:0px;
+    padding: 0px;
+    
+}
+.nav {
+    display: flex;
+    align-items: flex-end;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-content: flex-end;
+}
+.nav p {
+    color: #ffffff;
+    align-items: flex-end;
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    margin-left: 3em;
+    margin-right: 1.5em;
+    letter-spacing: 1px;
+    
+}
+
+/*SECOND SECTION*/
+.centered {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.text {
+    font-family: "Roboto Slab", serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: -10px;
+    padding-top: 25px;
+}
+
+.car-pictures {
+    display: grid;
+    margin-left: 1em;
+    margin-right: 1em;
+    grid-template-columns: repeat(auto-fill.minmax(30%, 1fr));
+    align-items: stretch;
+    column-gap: 1em;
+}
+.car-pictures img {
+    max-width: 100%;
+}
+.BMW {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.Mercedes {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.Volvo {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.featured-pictures>p {
+    padding: 4px;
+    margin: 0px;
+    background-color: #EEE;
+    width: 470px;
+    border: 1px solid;
+    border-color: #CCC;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+
+/*THIRD SECTION*/
+.third-section {
+	display: grid;
+	grid-template-columns: 1fr 4fr 4fr 1fr;
+	grid-gap: 15px;
+	text-align: center;
+	max-width: 100%;
+	margin-bottom: 50px;
+}
+
+.left {
+	grid-column: 2/3;
+
+}
+
+.right {
+	grid-column: 3/4;
+
+}
+
+.calendar {
+	background: #eee;
+	grid-column: 1/2;
+}
+
+.event {
+	border: 1px solid #ccc;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+
+
+p.month {
+	color: #D82201;
+	font-size: 14px;
+	margin-top: 10px;
+    font-weight: bold;
+}
+
+p.day {
+	font-size: 28px;
+	font-family: 'Roboto Slab', sans-serif;	
+	font-weight: 1000;
+    margin: 0px;
+}
+
+.event-description {
+	grid-column: 2/4;
+	text-align: left;
+	padding: 5px 10px;
+    margin: 0px;
+}
+.event-description p{
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+.event-description h4 {
+	padding: 5px 0px;
+    margin: 0px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.tickets {
+	font-family: 'Roboto', sans-serif;	
+	display: grid;
+    grid-template-rows: 1fr 1fr;
+	grid-gap: 15px;
+}
+
+.tickets h1 {
+	font-family: 'Roboto', sans-serif;	
+
+}
+
+.first-row {
+	background: #EEE;
+	border: #CCC 1px solid;
+	padding: 30px;
+	grid-row: 1/2;
+}
+
+.last-row{
+	background: #EEE;
+	border: #CCC 1px solid;
+	padding: 30px;
+	color: #CFCFCF;
+	grid-row: 2/2;
+	
+}
+
+.button-green {
+	background-color: #4AA849; 
+	border: none;
+	color: white;
+	padding: 10px 35px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	-moz-box-shadow: inset 0 0 10px #418F40;
+    -webkit-box-shadow: inset 0 0 10px #418F40;
+    box-shadow: inset 0 0 10px #418F40;
+	margin-top: 20px;
+}
+
+.button-inactive {
+	background-color: #CFCFCF; 
+	border: none;
+	color: white;
+	padding: 10px 35px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	-moz-box-shadow: inset 0 0 10px #C1C1C1;
+    -webkit-box-shadow: inset 0 0 10px #C1C1C1;
+    box-shadow: inset 0 0 10px #C1C1C1;
+	margin-top: 20px;
+}
+div {
+    display: block;
+}
+
+/*FOOTER*/
+footer {
+    background-color:#333;
+    color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    font-size: 13px;
+    padding: 1px 0px;
+}
+footer p {
+    grid-column: 1/2;
+    padding-left: 10px;
+    line-height: 55px;
+}
+.icons {
+	font-size: 40px;
+	padding: 10px;
+    margin-top: 10px;
+}
+
+.icons-container {
+	grid-column: 2/3;
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 650px) {
+	
+	/*FIRST SECTION*/
+	.first-section {
+	padding: 0;
+	background-image: url("jaguar-etype.jpg");
+	background-position: left; 
+    background-repeat: no-repeat;
+	background-size: cover;
+	height: 20em;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	}
+	
+	.burger-menu {
+		visibility: visible;
+		margin-left: auto;
+		margin-right: 10px;
+		margin-top: 10px;
+		font-size: 30px;
+  		justify-content: flex-end;
+	}
+	
+	.nav {
+		display: none;
+	}
+	
+	.header-headline {
+	margin-top: auto;	
+	}
+	
+	.header-headline h1 {
+	font-weight: 400;
+	font-size: 3em;
+
+	}
+	
+	/*SECOND SECTION*/
+	.second-section {
+		margin: 50px 0px 30px 0px;
+	}
+	
+	.car-pictures {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 5px;
+	}
+	
+	.featured-pictures>p  {
+        width: 367px;
+        margin-bottom: 1em;
+	}	
+	/*THIRD SECTION*/
+	.third-section {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 5px;
+	}
+	
+	.right {
+		margin-top: 0px;
+	}
+	
+	.first-row{
+		padding: 10px;
+	}
+	
+	.first-row h1{
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		font-weight: 1000;
+	}
+	
+	.last-row{
+		padding: 10px;
+	}
+	
+	.last-row h1{
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		font-weight: 1000;
+	}
+	
+	/*FOOTER*/
+	footer {
+		padding: 0;
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+	
+	footer p {
+		order: 2;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.icons-container {
+		justify-content: center;
+		margin: 10px 0px 0px 0px;
+	}
+}
